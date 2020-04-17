@@ -37,32 +37,6 @@
           }
         }
       }
-      .Fukuoka {
-        font-size: 20px;
-        color: black;
-        padding-left: 50px;
-        .F-NumberOfPeople {
-          font-size: 16px;
-          padding: 5px 0 0 40px;
-        }
-      }
-    }
-    &__rightContent {
-      padding: 30px 50px 0 0;
-      font-size: 20px;
-      .home-page {
-        padding-bottom: 10px;
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-      .twetter {
-        a {
-          text-decoration: none;
-          color: skyblue;
-        }
-      }
     }
   }
   &__contents {
