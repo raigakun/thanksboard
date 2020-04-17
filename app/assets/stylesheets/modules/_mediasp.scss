@@ -146,7 +146,7 @@
             text-align: center;
             .form-box {
               #_text {
-                width: 90%;
+                width: 350px;
                 height: 35px;
                 padding-left: 10px;
                 border-radius: 4px;
@@ -176,12 +176,14 @@
               }
               .b-count {
                 display: flex;
-                padding: 7px 0 25px 0;
+                padding: 7px 0 25px 50px;
+                text-align: center;
                 i {
                   font-size: 25px;
                   color: orange;
                   padding-right: 40px;
                   padding-left: 10px;
+                  text-align: center;
                 }
                 p {
                   font-size: 20px;
