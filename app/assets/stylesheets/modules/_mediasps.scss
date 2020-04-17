@@ -43,7 +43,7 @@
       }
     }
   }
-  @media screen and ( max-width:479px ) {
+  @media screen and ( max-width:410px ) {
     &__contents {
       overflow: scroll;
       width: auto;
@@ -55,7 +55,7 @@
           background: image-url("samp1.jpeg")no-repeat center center;
           background-size: contain;
           width: auto;
-          height: 480px;
+          height: 450px;
           p {
             color: white;
             font-size: 13px;
@@ -63,7 +63,7 @@
             text-decoration: none;
             text-shadow: -1px -2px 3px black;
             height: 50px;
-            padding-top: 250px;
+            padding-top: 200px;
           }
         }
       }
@@ -164,11 +164,11 @@
             padding-top: 70px;
             text-align: center;
             .b-content {
-              width: 300px;
+              width: auto;
               .b-text {
                 font-size: 20px;
                 padding-bottom: 15px;
-                padding-bottom: 10px;
+                text-align: center;
               }
               .b-count {
                 margin: auto;
@@ -221,7 +221,7 @@
       }
     }
   }
-  @media screen and ( max-width:479px ) {
+  @media screen and ( max-width:410px ) {
     .fotter {
       padding-top: 30px;
       background-color: orange;
