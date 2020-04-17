@@ -1,0 +1,168 @@
+.korona-main
+  .korona-main__header
+    .korona-main__header__leftContent
+      .title
+        %p Thanks Board
+      .subTitle
+        %p ~新型コロナと闘う方々へ~
+    .korona-main__header__centerContent
+      .content-menu
+        %ul
+          %li Videos
+          %li Thanks Messages
+          %li Topics
+          %li Producers & Contact
+      -# %ul.Fukuoka
+      -#   福岡の感染者数
+      -#   %li.F-NumberOfPeople
+      -#     225人
+    .korona-main__header__rightContent
+      
+  .korona-main__contents
+    .korona-main__contents__images
+      .korona-message
+        %p
+          〜いつもありがとう〜 
+          %br
+          　皆さんの力が私たちの今日を支えています
+    .korona-main__contents__videos
+      .videos-text
+        %h1 Video Contents
+        %p text
+      .videos-content
+        .contents-box1
+          = image_tag 'youtube.png'
+          .box1-text
+            text1です
+        .contents-box2
+          = image_tag 'youtube.png'
+          .box2-text
+            text2です
+    .korona-main__contents__board
+      .board-text
+        %h2 Thanks Messages
+        %p 
+          この場所は、新型コロナウィルスと闘っていただいている医療従事者の方々に感謝の想いを伝える場所です。
+          %br
+          日々の業務に加え、見えない敵に対峙する勇気と行動に私達は敬意を表します。
+          %br
+          　気休め程度かもしれませんが、私達の想いが少しでも伝わることを願っています。
+        %p 
+          This place is a place to thank the medical staff who are fighting against the new coronavirus
+          %br
+          In addition to our daily work, we pay tribute to the courage and action to confront invisible enemies.
+          %br
+          　It may be a relief, but I hope we can convey our feelings a little.
+      .board-contents
+        .board-form
+          .form-box
+            = form_with model:@message, local:true do |f|
+              = f.collection_select :thx_id, Thx.all, :id, :value, {prompt:'--'}
+              .btn-box
+                = f.submit "いいね！する", class: "btn" 
+        .board-content
+          .b-content
+            .b-text
+              %p 
+                ここは例文１です。
+                %br
+                ここに文が入ります。
+            .b-count
+              %i.fas.fa-hand-holding-heart
+              %p 1234
+          .b-content
+            .b-text
+              %p 
+                ここは例文２です。
+                %br
+                ここに文が入ります。
+            .b-count
+              %i.fas.fa-hand-holding-heart
+              %p 3213
+          .b-content
+            .b-text
+              %p 
+                ここは例文３です。
+                %br
+                ここに文が入ります。
+            .b-count
+              %i.fas.fa-hand-holding-heart
+              %p 1234
+          .b-content
+            .b-text
+              %p 
+                ここは例文４です。
+                %br
+                ここに文が入ります。
+            .b-count
+              %i.fas.fa-hand-holding-heart
+              %p 1234
+          .b-content
+            .b-text
+              %p 
+                ここは例文５です。
+                %br
+                ここに文が入ります。
+            .b-count
+              %i.fas.fa-hand-holding-heart
+              %p 1234
+        .b-message
+          %p I hope you can reach me ...
+    .korona-main__contents__topic
+      .topic-text
+        %h3 Topics
+      .topic-content
+        %p ここはタイトルが入ります。
+        %a 
+          ここはトピックの本文です。本文を入れてください。
+          %br
+          本文を入れてください。
+      .topic-content
+        %p ここはタイトルが入ります。
+        %a 
+          ここはトピックの本文です。本文を入れてください。
+          %br
+          本文を入れてください。
+      .topic-content
+        %p ここはタイトルが入ります。
+        %a 
+          ここはトピックの本文です。本文を入れてください。
+          %br
+          本文を入れてください。
+  .fotter
+    .fotter-contents
+      .fotter-text
+        = link_to "#" do
+          = "Producers & Contact"
+      .f-home-page
+        %ul 
+          福岡県の情報について
+          %li
+            = link_to "https://www.pref.fukuoka.lg.jp/contents/covid-19-portal.html" do
+              = "福岡県庁HP"
+          %li
+            = link_to "https://twitter.com/@Pref_Fukuoka/", class: "contents__btn contents__btn--twitter" do
+              = icon('fab', 'twitter', class: "contents__btn--icon")
+              %span<>
+                Twitter
+      .f-home-page
+        %ul 
+          全国の情報について
+          %li
+            = link_to "https://www.mhlw.go.jp/index.html" do
+              = "厚生労働省HP"
+          %li
+            = link_to "https://twitter.com/@MHLWitter/", class: "contents__btn contents__btn--twitter" do
+              = icon('fab', 'twitter', class: "contents__btn--icon")
+              %span<>
+                Twitter
+    .fotter-logo
+      .logo
+        = image_tag ('teamlogo2.png')
+      .logo-text
+        %p from T.C70F OB Y.M.N
+        
+
+      
+  
+    
