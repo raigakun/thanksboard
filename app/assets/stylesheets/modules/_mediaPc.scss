@@ -1,36 +1,37 @@
-//1150px~
+//990~1149px
 .korona-main {
-  margin: 0;
-  padding: 0;
-  @media screen and (min-width:1150px) {
+  @media screen and (min-width:990px) and (max-width:1149px) {
     &__header {
       height: auto;
       width: 100%;
       position: fixed;
       background-color: white;
       border-bottom: solid 1px gray;
+      display: block;
+      justify-content: space-between;
       &__leftContent {
         display: flex;
         .title {
-          width: 370px;
           font-size: 45px;
           color: black;
-          padding: 10px 20px 0 30px;
+          padding: 10px 10px 0 30px;
           // border-bottom: solid 3px orange;
         }
         .subTitle {
+          padding-left: 15px;
           padding-top: 30px;
           font-size: 20px;
         }
       }
       &__centerContent {
         display: flex;
-        padding-left: 300px;
+        padding-top: 10px;
         .content-menu {
           ul {
-            padding-top: 10px;
-            font-size: 25px;
+            padding: 10px 20px 0 80px;
+            font-size: 26px;
             color: black;
+            text-align: center;
             li {
               display: inline;
               padding: 0 15px;
@@ -53,12 +54,12 @@
           height: 780px;
           p {
             color: white;
-            font-size: 45px;
+            font-size: 35px;
             padding-left: 200px;
             text-decoration: none;
             text-shadow: -1px -2px 3px black;
             height: 50px;
-            padding-top: 500px;
+            padding-top: 400px;
           }
         }
       }
@@ -84,8 +85,8 @@
           padding-top: 40px;
           .contents-box1 {
             width: 50%;
-            padding-right: 4px;
-            padding-left: 9px;
+            padding-right: 3px;
+            padding-left: 5px;
             .box1-text {
               background-color: black;
               color: white;
@@ -97,8 +98,8 @@
           }
           .contents-box2 {
             width: 50%;
-            padding-right: 9px;
-            padding-left: 4px;
+            padding-right: 5px;
+            padding-left: 3px;
             .box2-text {
               background-color: black;
               color: white;
@@ -154,23 +155,24 @@
           .board-content {
             display: flex;
             padding-top: 70px;
-            margin-left: 70px;
+            margin-left: 0;
+            text-align: center;
             .b-content {
               width: 300px;
               .b-text {
-                font-size: 20px;
+                font-size: 18px;
                 padding-bottom: 15px;
               }
               .b-count {
                 display: flex;
                 i {
-                  font-size: 30px;
+                  font-size: 25px;
                   color: orange;
                   padding-right: 40px;
-                  padding-left: 10px;
+                  padding-left: 30px;
                 }
                 p {
-                  font-size: 30px;
+                  font-size: 25px;
                 }
               }
             }
@@ -208,50 +210,6 @@
           }
         }
       }
-    }
-  }
-  .fotter {
-    padding-top: 30px;
-    background-color: orange;
-    .fotter-contents {
-      display: flex;
-      justify-content: space-around;
-      .fotter-text {
-        font-size: 20px;
-        a {
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-        }
-      }
-      .f-home-page {
-        ul {
-          color: white;
-          font-size: 20px;
-          font-weight: bold;
-          li {
-            font-size: 16px;
-            text-align: center;
-            padding: 20px 0 ;
-            a {
-              text-decoration: none;
-              color: white;
-            }
-          }
-        }
-      }
-    }
-    .fotter-logo {
-      text-align: center;
-      padding-top: 60px;
-    }
-    .logo-text {
-      padding-bottom: 50px;
-      a {
-        font-size: 16px;
-        color: white;
-        text-decoration: none;
-      }
-    }
+    }  
   }
 }
