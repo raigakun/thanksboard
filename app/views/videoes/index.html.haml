@@ -31,9 +31,11 @@
         %p text
       .videos-content
         .contents-box1
-          = image_tag 'youtube.png'
-          %iframe#player{frameborder: "0", height: "315", src: "https://www.youtube.com/embed/Eph4Jmz244A" ,type: "text/html", width: "640"}
           
+          
+            %iframe#player{:frameborder => "0", :height => "390", :src => "https://www.youtube.com/embed/CmKA99moE0A", :type => "text/html", :width => "640"}
+          -# = image_tag 'youtube.png'
+          -# %iframe#player{frameborder: "0", height: "315", src: "https://www.youtube.com/embed/Eph4Jmz244A" ,type: "text/html", width: "640"}
           .box1-text
             text1です
         .contents-box2
