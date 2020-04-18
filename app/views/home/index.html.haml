@@ -56,10 +56,10 @@
       .board-contents
         .board-form
           .form-box
-            = form_for "#" do |f|
-              = f.text_field :text, placeholder: "メッセージを選択してください"
-              .btn-box
-                = f.submit "Thank you!!", class: "btn" 
+          %h1 
+          - if user_signed_in?
+            %label 
+              = link_to "投稿 !!",new_message_path,class:"btn btn-primary"
         .board-content
           .b-content
             .b-text
@@ -134,6 +134,11 @@
       .fotter-text
         = link_to "#" do
           = "Producers & Contact"
+      %h1 
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        = link_to "管理者用", new_user_session_path
       .f-home-page
         %ul 
           福岡県の情報について
