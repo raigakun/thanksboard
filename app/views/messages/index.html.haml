@@ -54,21 +54,17 @@
           %br
           　It may be a relief, but I hope we can convey our feelings a little.
       .board-contents
-        .board-form
-          .form-box
-            = form_with model:@message, local:true do |f|
-              = f.collection_select :thx_id, Thx.all, :id, :value, {prompt:'--'}
-              .btn-box
-                = f.submit "いいね！する", class: "btn" 
         .board-content
           .b-content
             .b-text
               %p 
-                ここは例文１です。
+                -# = @messages.thx_id[1]
                 %br
                 ここに文が入ります。
             .b-count
               %i.fas.fa-hand-holding-heart
+
+              = @messages.like_count
               %p 1234
           .b-content
             .b-text
