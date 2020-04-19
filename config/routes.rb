@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :messages,  only: [:new, :create, :show,  :edit, :destroy] 
+  resources :producers,  only: [:index]
   # do
   #   resources :likes, only: [:create, :destroy]
   # end

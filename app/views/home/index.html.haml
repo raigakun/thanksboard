@@ -11,13 +11,9 @@
           %li Videos
           %li Thanks Messages
           %li Topics
-          %li Producers & Contact
-      -# %ul.Fukuoka
-      -#   福岡の感染者数
-      -#   %li.F-NumberOfPeople
-      -#     225人
-    .korona-main__header__rightContent
-      
+          %li 
+            = link_to producers_path do
+              = "Producers & Contact"
   .korona-main__contents
     .korona-main__contents__images
       .korona-message
@@ -132,7 +128,7 @@
   .fotter
     .fotter-contents
       .fotter-text
-        = link_to "#" do
+        = link_to producers_path do
           = "Producers & Contact"
       .f-home-page
         %ul 
