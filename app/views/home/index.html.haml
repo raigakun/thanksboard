@@ -134,11 +134,6 @@
       .fotter-text
         = link_to "#" do
           = "Producers & Contact"
-      %h1 
-      - if user_signed_in?
-        = link_to "ログアウト", destroy_user_session_path, method: :delete
-      - else
-        = link_to "管理者用", new_user_session_path
       .f-home-page
         %ul 
           福岡県の情報について
@@ -165,8 +160,11 @@
       .logo
         = image_tag ('teamlogo2.png')
       .logo-text
-        %p from T.C70F OB Y.M.N
-        
+        %p 
+        - if user_signed_in?
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
+        - else
+          = link_to "from T.C70F OB Y.M.N", new_user_session_path
 
       
   

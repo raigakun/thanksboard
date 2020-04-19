@@ -1,3 +1,4 @@
+//約300px~410px
 .korona-main {
   @media screen and ( max-width:410px ) {
     &__header {
@@ -19,7 +20,7 @@
           font-size: 12px;
           padding-top: 10px;
           text-align: center;
-          padding-right: 55px;
+          padding-left: 25px;
         }
       }
       &__centerContent {
@@ -55,7 +56,7 @@
           background: image-url("samp1.jpeg")no-repeat center center;
           background-size: contain;
           width: auto;
-          height: 450px;
+          height: 430px;
           p {
             color: white;
             font-size: 13px;
@@ -72,8 +73,8 @@
         .videos-text {
           text-align: center;
           h1 {
-            padding-top: 40px;
-            font-size: 20px;
+            padding-top: 10px;
+            font-size: 25px;
             font-weight: bold;
             border-bottom: solid 3px orange;
             
@@ -124,7 +125,7 @@
           text-align: center;
           h2 {
             padding-top: 100px;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
             border-bottom: solid 3px orange;
           }
@@ -162,23 +163,28 @@
           .board-content {
             display: block;
             padding-top: 70px;
-            text-align: center;
+            margin: auto;
             .b-content {
               width: auto;
+              margin: auto;
               .b-text {
                 font-size: 20px;
                 padding-bottom: 15px;
-                text-align: center;
+                p {
+                  text-align: center;
+                  padding-right: 20px;
+                }
               }
               .b-count {
-                margin: auto;
                 display: flex;
-                padding: 7px 0 25px 0;
+                padding: 0px 0 25px 0px;
+                width: 150px;
+                margin: auto;
                 i {
                   font-size: 25px;
                   color: orange;
                   padding-right: 40px;
-                  padding-left: 80px;
+                  text-align: center;
                 }
                 p {
                   font-size: 20px;
@@ -199,7 +205,7 @@
         padding-top: 130px;
         .topic-text {
           text-align: center;
-          font-size: 20px;
+          font-size: 25px;
           padding-bottom: 40px;
           h3 {
             font-weight: bold;
@@ -261,9 +267,12 @@
         padding-top: 0;
       }
       .logo-text {
-        font-size: 16px;
-        color: white;
         padding-bottom: 50px;
+        a {
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
