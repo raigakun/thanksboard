@@ -31,7 +31,8 @@
         %p text
       .videos-content
         .contents-box1
-          = image_tag 'youtube.png'
+          =@videoes[0]["snippet"]["title"] 
+          -# = image_tag 'youtube.png'
           .box1-text
             text1です
         .contents-box2
