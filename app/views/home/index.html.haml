@@ -62,47 +62,9 @@
               = link_to "投稿 !!",new_message_path,class:"btn btn-primary"
         .board-content
           .b-content
+          - @messages.each do |message|
             .b-text
-              %p 
-                ここは例文１です。
-                %br
-                ここに文が入ります。
-            .b-count
-              %i.fas.fa-hand-holding-heart
-              %p 1234
-          .b-content
-            .b-text
-              %p 
-                ここは例文２です。
-                %br
-                ここに文が入ります。
-            .b-count
-              %i.fas.fa-hand-holding-heart
-              %p 3213
-          .b-content
-            .b-text
-              %p 
-                ここは例文３です。
-                %br
-                ここに文が入ります。
-            .b-count
-              %i.fas.fa-hand-holding-heart
-              %p 1234
-          .b-content
-            .b-text
-              %p 
-                ここは例文４です。
-                %br
-                ここに文が入ります。
-            .b-count
-              %i.fas.fa-hand-holding-heart
-              %p 1234
-          .b-content
-            .b-text
-              %p 
-                ここは例文５です。
-                %br
-                ここに文が入ります。
+              %p= message.text
             .b-count
               %i.fas.fa-hand-holding-heart
               %p 1234
