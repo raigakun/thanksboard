@@ -17,6 +17,13 @@
   .korona-main__contents
     .korona-main__contents__images
       .korona-message
+        %div.slick
+          %div
+            = image_tag 'samp1.jpeg'
+          %div
+            = image_tag 'samp2.jpeg'
+          %div
+            = image_tag 'samp3.jpeg'
         %p
           〜いつもありがとう〜 
           %br
@@ -24,20 +31,13 @@
     .korona-main__contents__videos
       .videos-text
         %h1 Video Contents
-        %p text
       .videos-content
         .contents-box1
-          %iframe{allow: "autoplay; encrypted-media", frameborder: "0", height: "500",
-            src: "https://www.youtube-nocookie.com/embed/Eph4Jmz244A?loop=1&playlist=TLPQMTkwNDIwMjBktcjztfZVVA?", width: "800px"} 
-          -# = image_tag 'youtube.png'
-          -# .box1-text
-          -#   text1です
+          %iframe{allow: "autoplay; encrypted-media", frameborder: "0",
+            src: "https://www.youtube-nocookie.com/embed/Eph4Jmz244A?loop=1&playlist=TLPQMTkwNDIwMjBktcjztfZVVA?"} 
         .contents-box2
-          %iframe{allow: "autoplay; encrypted-media", frameborder: "0", height: "500",
-            src: "https://www.youtube-nocookie.com/embed/VdyKX4eYba4?list=TLPQMTkwNDIwMjCGNI9lYXeP-w", width: "800px"} 
-          -# = image_tag 'youtube.png'
-          -# .box2-text
-          -#   text2です
+          %iframe{allow: "autoplay; encrypted-media", frameborder: "0",
+            src: "https://www.youtube-nocookie.com/embed/VdyKX4eYba4?list=TLPQMTkwNDIwMjCGNI9lYXeP-w"} 
     .korona-main__contents__board
       .board-text
         %h2 Thanks Messages

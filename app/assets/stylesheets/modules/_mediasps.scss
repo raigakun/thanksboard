@@ -2,6 +2,7 @@
 .korona-main {
   @media screen and ( max-width:410px ) {
     &__header {
+      z-index: 100;
       height: auto;
       width: 100%;
       position: fixed;
@@ -57,23 +58,35 @@
         width: auto;
         height: auto;
         .korona-message {
-          background: image-url("samp1.jpeg")no-repeat center center;
           background-size: contain;
           width: auto;
-          height: 430px;
+          height: auto;
+          .slick {
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            
+            img {
+              background-size: contain;
+              width: 100%;
+              height: 350px;
+              padding-top: 70px;
+            }
+          }
           p {
             color: white;
-            font-size: 13px;
-            padding-left: 40px;
+            font-size: 14px;
+            text-align: center;
             text-decoration: none;
             text-shadow: -1px -2px 3px black;
             height: 50px;
-            padding-top: 200px;
+            padding-top: 50px;
           }
         }
       }
       //youtube
       &__videos {
+        padding-top: 235px;
         .videos-text {
           text-align: center;
           h1 {
@@ -92,13 +105,13 @@
           display: block;
           height: auto;
           width: auto;
-          padding-top: 40px;
           .contents-box1 {
             width: 100%;
             padding-left: 0;
             background-size: contain;
-            img {
+            iframe {
               width: 100%;
+              height: 230px;
               padding-left: 0;
               background-size: contain;
             }
@@ -110,8 +123,9 @@
           }
           .contents-box2 {
             width: auto;
-            img {
+            iframe {
               width: 100%;
+              height: 230px;
               padding-left: 0;
               background-size: contain;
             }
