@@ -62,12 +62,16 @@
               = link_to "投稿 !!",new_message_path,class:"btn btn-primary"
         .board-content
           .b-content
-          - @messages.each do |message|
-            .b-text
-              %p= message.text
-            .b-count
-              %i.fas.fa-hand-holding-heart
-              %p 1234
+            - @messages.each do |message|
+              .b-text
+              = message.text
+              .b-push
+              = render partial: 'likes/like', locals: { message: message, likes: @likes }
+              .b-count
+              = message.likes_count 
+              回の感謝の気持ちです。
+              %br
+              %br
         .b-message
           %p I hope you can reach me ...
     .korona-main__contents__topic
