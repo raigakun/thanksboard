@@ -13,17 +13,25 @@
 ActiveRecord::Schema.define(version: 2020_04_18_062045) do
 
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "message_id", null: false
+    t.bigint "message_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["message_id"], name: "index_likes_on_message_id"
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "thx_id"
+    t.integer "likes_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "text"
+  end
+
+  create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "message_id"
+    t.integer "thx_id"
+    t.integer "review"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -39,5 +47,4 @@ ActiveRecord::Schema.define(version: 2020_04_18_062045) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "likes", "messages"
 end
