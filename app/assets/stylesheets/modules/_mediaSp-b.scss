@@ -11,17 +11,38 @@
       display: block!important;
       &__leftContent {
         .title {
-          font-size: 30px;
-          color: black;
-          padding: 20px 0 0 20px;
-          text-align: center;
-          // border-bottom: solid 3px orange;
-        }
-        .subTitle {
-          font-size: 16px;
           padding-top: 10px;
           text-align: center;
-          padding-left: 30px;
+          h3 {
+            font-family: "Paytone One";
+            color: #202020;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+          }
+          h3 span {
+            display: block;
+            font-size: 30px;
+            color: orange;
+            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
+            letter-spacing: -4px;
+          }
+        }
+        .subTitle {
+          padding-top: 10px;
+          text-align: center;
+          p {
+            font-family: "Paytone One";
+            color: #202020;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+          }
+          p span {
+            display: block;
+            font-size: 16px;
+            color: black;
+            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px gray;
+            letter-spacing: -3px;
+          }
         }
       }
       &__centerContent {
@@ -39,10 +60,17 @@
               padding: 0 8.5px;
               font-weight: bold;
               border-bottom: solid 3px orange;
+              transition: background-color 1s;
+              text-shadow: 0 -2px 1px white;
               a {
                 text-decoration: none;
                 color: black;
               }
+            }
+            li:hover {
+              background-color: orange;
+              border-radius: 20px;
+              transition: background-color 2s, border-radius 1s;
             }
           }
         }
@@ -72,7 +100,7 @@
               background-size: contain;
               width: 100%;
               height: 380px;
-              padding-top: 20px;
+              padding-top: 11px;
             }
           }
           p {
@@ -86,12 +114,17 @@
           }
         }
       }
+      .message-text {
+        text-align: center;
+        padding-top: 130px;
+        font-size: 14px;
+      }
       //youtube
       &__videos {
         padding-top: 160px;
         .videos-text {
           text-align: center;
-          h1 {
+          h5 {
             padding-top: 40px;
             font-size: 25px;
             font-weight: bold;
@@ -142,6 +175,7 @@
       }
       //Thanks message
       &__board {
+        padding-top: 60px;
         .board-text {
           text-align: center;
           h2 {
@@ -223,8 +257,9 @@
           }
         }
       }
+      //Topics
       &__topic {
-        padding-top: 130px;
+        padding-top: 160px;
         .topic-text {
           text-align: center;
           font-size: 25px;
@@ -259,7 +294,7 @@
         .fotter-text {
           text-align: center;
           a {
-            color: black;
+            color: white;
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
@@ -267,7 +302,7 @@
         }
         .f-home-page {
           ul {
-            color: black;
+            color: white;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -278,7 +313,7 @@
               padding: 10px 0 ;
               a {
                 text-decoration: none;
-                color: black;
+                color: white;
               }
             }
           }
@@ -289,12 +324,9 @@
         padding-top: 0;
       }
       .logo-text {
+        font-size: 16px;
+        color: white;
         padding-bottom: 50px;
-        a {
-          font-size: 16px;
-          color: white;
-          text-decoration: none;
-        }
       }
     }
   }

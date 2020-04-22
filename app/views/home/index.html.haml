@@ -2,35 +2,60 @@
   .korona-main__header
     .korona-main__header__leftContent
       .title
-        %p Thanks Board
+        %h3
+          %span Thanks Board
       .subTitle
-        %p ~新型コロナと闘う方々へ~
+        %p 
+          %span ~ F r i d a y　O v a t i o n ~
     .korona-main__header__centerContent
       .content-menu
         %ul
-          %li Videos
-          %li Thanks Messages
-          %li Topics
           %li 
-            = link_to producers_path do
-              = "Producers & Contact"
+            %a.type-1{:href => "#1"}
+              %span Videos
+
+          %li 
+            %a.type-1{:href => "#2"}
+              %span Thanks Messages
+
+          %li 
+            %a.type-1{:href => "#3"}
+              %span Topics
+          %li 
+            %a.type-1{:href => "#4"}
+              %span Producers & Contact
   .korona-main__contents
+    #index
     .korona-main__contents__images
       .korona-message
         %div.slick
           %div
-            = image_tag 'samp1.jpeg'
+            = image_tag 'ovation.jpeg'
           %div
-            = image_tag 'samp2.jpeg'
+            = image_tag 'ovation1.png'
+          %div
+            = image_tag 'ovation3.jpeg'
+          %div
+            = image_tag 'ovation4.jpeg'
+          %div
+            = image_tag 'samp1.jpeg'
           %div
             = image_tag 'samp3.jpeg'
         %p
           〜いつもありがとう〜 
           %br
             皆さんの力が私たちの今日を支えています
+    .message-text
+      %i
+        私達Team70'sは「＃Friday　Ovation」活動を勝手ながら応援しています！！
+        %br
+        この活動がもっと広まっていくことを願っています
+        %br
+        ＊画像等勝手に流用させていただいているので、変更、削除の申し出には早急に対応します。
+    #1
     .korona-main__contents__videos
       .videos-text
-        %h1 Video Contents
+        %h5 Video Contents
       .videos-content
         .contents-box1
           %iframe{allow: "autoplay; encrypted-media", frameborder: "0",
@@ -38,6 +63,7 @@
         .contents-box2
           %iframe{allow: "autoplay; encrypted-media", frameborder: "0",
             src: "https://www.youtube-nocookie.com/embed/HM_eJ3ZwoZw?list=PLSCfvrrkoBDLLFWN5YTjqmkPKRmXosWp8?"} 
+    #2
     .korona-main__contents__board
       .board-text
         %h2 Thanks Messages
@@ -70,6 +96,7 @@
               %p 1234
         .b-message
           %p I hope you can reach me ...
+    #3
     .korona-main__contents__topic
       .topic-text
         %h3 Topics
@@ -91,6 +118,7 @@
           ここはトピックの本文です。本文を入れてください。
           %br
           本文を入れてください。
+  #4
   .fotter
     .fotter-contents
       .fotter-text
@@ -119,6 +147,8 @@
               %span<>
                 Twitter
     .fotter-logo
+      %a.type-1{:href => "#index"}
+        = "Back To Top"
       .logo
         = image_tag ('teamlogo2.png')
       .logo-text

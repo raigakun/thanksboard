@@ -39,10 +39,16 @@
               font-weight: bold;
               border-bottom: solid 3px orange;
               text-align: center;
+              transition: background-color 1s;
               a {
                 text-decoration: none;
                 color: black;
               }
+            }
+            li:hover {
+              background-color: orange;
+              border-radius: 20px;
+              transition: background-color 2s, border-radius 1s;
             }
           }
         }
@@ -70,7 +76,7 @@
               background-size: contain;
               width: 100%;
               height: 350px;
-              padding-top: 70px;
+              padding-top: 115px;
             }
           }
           p {
@@ -86,7 +92,7 @@
       }
       //youtube
       &__videos {
-        padding-top: 235px;
+        padding-top: 205px;
         .videos-text {
           text-align: center;
           h1 {
@@ -139,6 +145,7 @@
       }
       //Thanks message
       &__board {
+        padding-top: 160px;
         .board-text {
           text-align: center;
           h2 {
@@ -220,7 +227,7 @@
         }
       }
       &__topic {
-        padding-top: 130px;
+        padding-top: 260px;
         .topic-text {
           text-align: center;
           font-size: 25px;
@@ -256,14 +263,14 @@
           font-size: 10px;
           text-align: center;
           a {
-            color: black;
+            color: white;
             text-decoration: none;
             font-weight: bold;
           }
         }
         .f-home-page {
           ul {
-            color: black;
+            color: white;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -274,7 +281,7 @@
               padding: 10px 0 ;
               a {
                 text-decoration: none;
-                color: black;
+                color: white;
               }
             }
           }
@@ -285,12 +292,9 @@
         padding-top: 0;
       }
       .logo-text {
+        font-size: 16px;
+        color: white;
         padding-bottom: 50px;
-        a {
-          font-size: 16px;
-          color: white;
-          text-decoration: none;
-        }
       }
     }
   }
