@@ -1,12 +1,12 @@
 class TopicsController < ApplicationController
   
   def new
-    @topic = topic.new
+    @topic = Topic.new
   end
 
   def create
-    @mtopic = Topic.new(topic_params)
-    if @message.save
+    @topic = Topic.new(topic_params)
+    if @topic.save
       redirect_to root_path
     else
       redirect_to root_path
