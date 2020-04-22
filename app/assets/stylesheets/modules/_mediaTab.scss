@@ -11,17 +11,38 @@
       display: block!important;
       &__leftContent {
         .title {
-          font-size: 32px;
-          color: black;
-          padding: 20px 0 0 20px;
           text-align: center;
-          // border-bottom: solid 3px orange;
+          padding-top: 15px;
+          h3 {
+            font-family: "Paytone One";
+            color: #202020;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+          }
+          h3 span {
+            display: block;
+            font-size: 32px;
+            color: orange;
+            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
+            letter-spacing: -4px;
+          }
         }
         .subTitle {
-          font-size: 20px;
           padding-top: 10px;
           text-align: center;
-          padding-left: 25px;
+          p {
+            font-family: "Paytone One";
+            color: #202020;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+          }
+          p span {
+            display: block;
+            font-size: 20px;
+            color: black;
+            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px gray;
+            letter-spacing: -4px;
+          }
         }
       }
       &__centerContent {
@@ -39,10 +60,17 @@
               padding: 0 8.5px;
               font-weight: bold;
               border-bottom: solid 3px orange;
+              transition: background-color 1s;
+              text-shadow: 0 -2px 1px white;
               a {
                 text-decoration: none;
                 color: black;
               }
+            }
+            li:hover {
+              background-color: orange;
+              border-radius: 20px;
+              transition: background-color 2s, border-radius 1s;
             }
           }
         }
@@ -72,7 +100,7 @@
               background-size: contain;
               width: 100%;
               height: 455px;
-              padding-top: 35px;
+              padding-top: 28px;
             }
           }
           p {
@@ -85,12 +113,16 @@
           }
         }
       }
+      .message-text {
+        text-align: center;
+        padding-top: 130px;
+      }
       //youtube
       &__videos {
-        padding-top: 80px;
+        padding-top: 120px;
         .videos-text {
           text-align: center;
-          h1 {
+          h5 {
             padding-top: 40px;
             font-size: 25px;
             font-weight: bold;
@@ -141,6 +173,7 @@
       }
       //Thanks message
       &__board {
+        padding-top: 60px;
         .board-text {
           text-align: center;
           h2 {
@@ -223,7 +256,7 @@
         }
       }
       &__topic {
-        padding-top: 130px;
+        padding-top: 160px;
         .topic-text {
           text-align: center;
           font-size: 25px;
