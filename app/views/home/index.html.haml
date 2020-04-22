@@ -104,24 +104,31 @@
     .korona-main__contents__topic
       .topic-text
         %h3 Topics
+        - if user_signed_in?
+            %label 
+              = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
       .topic-content
+        -# - @topics.each do |topic|
+        -#   %p= topic.title 
+        -#   %a 
+        -#   = topic.text       
         %p ここはタイトルが入ります。
         %a 
           ここはトピックの本文です。本文を入れてください。
           %br
           本文を入れてください。
-      .topic-content
-        %p ここはタイトルが入ります。
-        %a 
-          ここはトピックの本文です。本文を入れてください。
-          %br
-          本文を入れてください。
-      .topic-content
-        %p ここはタイトルが入ります。
-        %a 
-          ここはトピックの本文です。本文を入れてください。
-          %br
-          本文を入れてください。
+        .topic-content
+          %p ここはタイトルが入ります。
+          %a 
+            ここはトピックの本文です。本文を入れてください。
+            %br
+            本文を入れてください。
+        .topic-content
+          %p ここはタイトルが入ります。
+          %a 
+            ここはトピックの本文です。本文を入れてください。
+            %br
+            本文を入れてください。
   #4
   .fotter
     .fotter-contents

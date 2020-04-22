@@ -1,0 +1,11 @@
+
+.board-contents
+  .board-form
+    .form-box
+    %h1 
+    - if user_signed_in?
+      %label 
+      = form_with model:@message, local:true do |f|
+        = f.text_field :text, placeholder: "メッセージを選択してください"
+        .btn-box
+        = f.submit "投稿", class: "btn"
