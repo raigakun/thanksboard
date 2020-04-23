@@ -97,7 +97,7 @@
                     = message.text
               .b-push
                 %span{:id => "like-of-#{message.id}"}
-                  = render partial: 'likes/like', locals: { message: message }, data: {"turbolinks" => false}
+                  = render partial: 'likes/like', locals: { message: message }
 
         .b-message
           %p I hope my heart will reach you ...
