@@ -173,18 +173,18 @@
       }
       //Thanks message
       &__board {
-        padding-top: 60px;
+        padding-top: 100px;
         .board-text {
           text-align: center;
           h2 {
-            padding-top: 100px;
-            font-size: 25px;
+            padding-top: 60px;
+            font-size: 30px;
             font-weight: bold;
             border-bottom: solid 3px orange;
           }
           p {
             padding-top: 30px;
-            font-size: 15px;
+            font-size: 20px;
             br {
               padding-top: 20px;
             }
@@ -192,56 +192,103 @@
         }
         .board-contents {
           padding-top: 120px;
-          text-align: center;
-          .board-form {
+          .board-content {
+            padding-top: 70px;
             text-align: center;
-            .form-box {
-              #_text {
-                width: 90%;
-                height: 35px;
-                padding-left: 10px;
-                border-radius: 4px;
+            .b-toptext {
+              font-size: 30px;
+              display: flex;
+              text-align: center;
+              img {
+                height: 60px;
+                width: 60px;
+                margin-left: auto;
               }
-              .btn-box {
+              p {
+                margin-right: auto;
                 padding-top: 10px;
-                height: 50px;
-                .btn {
-                  width: 60%;
-                  height: 25px;
-                  background-color: orange;
-                  border-radius: 8px;
-                }
               }
             }
-          }
-          .board-content {
-            display: block;
-            padding-top: 70px;
-            margin: auto;
             .b-content {
               width: auto;
-              margin: auto;
               .b-text {
-                font-size: 20px;
+                font-size: 25px;
                 padding-bottom: 15px;
-                p {
-                  text-align: center;
-                  padding-right: 20px;
+                padding-top: 70px;
+                font-weight: bold;
+                position:relative;
+                line-height: 5;
+                .bound span{
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  top:0;
+                  bottom: 0;
+                  margin: auto;
+                  font: size 30px;;
+                  font-weight:bold;
+                  color: black;
+                  text-align:center;
+                  // width:500px;
+                  // height:100px;
+                  animation: bound-anim 2.5s infinite;
+                }
+                
+                @keyframes bound-anim {
+                  0%,100% {top: 0;transform: scale(1);}
+                  20% {top: -15%;}
+                  40% {transform: scale(1);}
+                  70% {top: 0;transform: scale(1.1,0.8);}
                 }
               }
-              .b-count {
-                display: flex;
-                padding: 0px 0 25px 0px;
-                width: 150px;
-                margin: auto;
-                i {
-                  font-size: 25px;
+
+              h6 {
+                padding-bottom: 30px;
+                font-size: 30px;
+                a {
+                  text-decoration: none;
                   color: orange;
-                  padding-right: 40px;
-                  text-align: center;
                 }
-                p {
-                  font-size: 20px;
+                a:hover {
+                  background-color: black;
+                  border-radius: 20px;
+                  transition: background-color 0.3s, border-radius 0.3s;
+                }
+              }
+              .b-push {
+                display: flex;
+                margin: auto;
+                border-bottom: solid 1px orange;
+                
+                img {
+                  text-decoration: none;
+                  width: 80px;
+                  height: 80px;
+                  border-radius: 50%;
+                }
+                
+                form {
+                  margin-left: auto;
+                  #like-buttons {
+                    border: none;
+                  }
+                }
+                form:hover {
+                  animation: hoverShake 0.2s linear 15;
+                  opacity: 0.8;
+                }
+                
+                @keyframes hoverShake {
+                  0% {transform: skew(0deg,0deg);}
+                  25% {transform: skew(1.5deg, 1.5deg);}
+                  75% {transform: skew(-1.5deg, -1.5deg);}
+                  100% {transform: skew(0deg,0deg);}
+                }
+                .b-count {
+                  font-size: 40px;
+                  color: orange;
+                  margin-right: auto;
+                  padding: 20px 0 0 15px;
                 }
               }
             }
@@ -249,7 +296,7 @@
           .b-message {
             text-align: center;
             padding-top: 20px;
-            font-size: 35px;
+            font-size: 40px;
             font-weight: bold;
             color: orange;
           }
