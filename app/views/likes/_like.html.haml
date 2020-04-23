@@ -1,5 +1,7 @@
 = button_to message_likes_path(message),id: "like-buttons", remote: true do
   = image_tag 'icon1.jpeg',id: "camera", class: "fluffy"
+.b-count
+  = message.likes_count
 
   
 
