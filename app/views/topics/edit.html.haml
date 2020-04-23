@@ -1,6 +1,6 @@
 .korona-main__contents__topic
   .topic-text
-    %h3 新規Topics投稿
+    %h3 投稿Topics編集
   .topic-input
     =form_with model:@topic, local:true do |f|
       .title
@@ -12,7 +12,5 @@
         %br/ 
         = f.text_area :text, autofocus: true, class: 'content-default'
       .btn-box
-        .btn-box__post
-          = f.submit "投稿", class: "btn"
-        .btn-box__return
-          = link_to 'ホーム画面に戻る', root_path
+        = f.submit "変更", class: "btn"
+    
