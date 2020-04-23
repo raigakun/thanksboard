@@ -96,9 +96,9 @@
                   %span
                     = message.text
               .b-push
-                = render partial: 'likes/like', locals: { message: message, likes: @likes }
-                .b-count
-                  = message.likes_count 
+                %span{:id => "like-of-#{message.id}"}
+                  = render partial: 'likes/like', locals: { message: message }, data: {"turbolinks" => false}
+
         .b-message
           %p I hope you can reach me ...
     #3
