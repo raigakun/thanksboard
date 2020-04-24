@@ -256,7 +256,7 @@
                 }
               }
               .b-push {
-                display: flex;
+                // display: flex;
                 margin: auto;
                 border-bottom: solid 1px orange;
                 
@@ -271,6 +271,7 @@
                   margin-left: auto;
                   #like-buttons {
                     border: none;
+                    background-color: white;
                   }
                 }
                 form:hover {
@@ -288,7 +289,7 @@
                   font-size: 40px;
                   color: orange;
                   margin-right: auto;
-                  padding: 20px 0 0 15px;
+                  // padding: 20px 0 0 15px;
                 }
               }
             }

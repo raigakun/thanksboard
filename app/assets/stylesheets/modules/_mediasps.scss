@@ -228,14 +228,14 @@
                 }
               }
               .b-push {
-                display: flex;
+                // display: flex;
                 margin: auto;
                 border-bottom: solid 1px orange;
                 
                 img {
                   text-decoration: none;
-                  width: 50px;
-                  height: 50px;
+                  width: 70px;
+                  height: 70px;
                   border-radius: 50%;
                 }
                 
@@ -243,6 +243,7 @@
                   margin-left: auto;
                   #like-buttons {
                     border: none;
+                    background-color: white;
                   }
                 }
                 form:hover {
@@ -260,7 +261,7 @@
                   font-size: 30px;
                   color: orange;
                   margin-right: auto;
-                  padding: 10px 0 10px 15px;
+                  // padding: 10px 0 10px 15px;
                 }
               }
             }
@@ -302,7 +303,7 @@
   }
   @media screen and ( max-width:410px ) {
     .fotter {
-      padding-top: 30px;
+      padding-top: 260px;
       background-color: orange;
       .fotter-contents {
         display: block;
