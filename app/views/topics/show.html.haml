@@ -11,7 +11,8 @@
         %tr
           %th 本文
           %td=simple_format(@topic.text)
-          = markdown(@topic.text)
+          =markdown(@topic.text)
+         
   - if user_signed_in?
     .btn-box
       .btn-box__edit

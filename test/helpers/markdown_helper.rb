@@ -1,6 +1,5 @@
 module MarkdownHelper
   require "redcarpet"
-  
   def markdown(text)
     unless @markdown
       options = {
