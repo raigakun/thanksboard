@@ -1,0 +1,38 @@
+.fotter
+  .fotter-contents
+    .fotter-text
+      = link_to producers_path do
+        = "Producers & Contact"
+    .f-home-page
+      %ul 
+        福岡県の情報について
+        %li
+          = link_to "https://www.pref.fukuoka.lg.jp/contents/covid-19-portal.html" do
+            = "福岡県庁HP"
+        %li
+          = link_to "https://twitter.com/@Pref_Fukuoka/", class: "contents__btn contents__btn--twitter" do
+            = icon('fab', 'twitter', class: "contents__btn--icon")
+            %span<>
+              Twitter
+    .f-home-page
+      %ul 
+        全国の情報について
+        %li
+          = link_to "https://www.mhlw.go.jp/index.html" do
+            = "厚生労働省HP"
+        %li
+          = link_to "https://twitter.com/@MHLWitter/", class: "contents__btn contents__btn--twitter" do
+            = icon('fab', 'twitter', class: "contents__btn--icon")
+            %span<>
+              Twitter
+  .fotter-logo
+    %a.type-1{:href => "#index"}
+      = "Back To Top"
+    .logo
+      = image_tag ('teamlogo2.png')
+    .logo-text
+      %p 
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        = link_to "from T.C70F OB Y.M.N", new_user_session_path

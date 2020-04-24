@@ -1,0 +1,96 @@
+.korona-main__contents__topic {
+  padding-top: 150px;
+  .topic-text {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    a {
+      text-decoration: none;
+      color: black;
+      h3 {
+        font-weight: bold;
+        border-bottom: solid 3px orange;
+      }
+    }
+  }
+  
+  .topic-table {
+    text-align: center;
+    margin-top: 50px;
+    table {
+      display: inline-block;
+      tbody {
+        width: 100%;
+        height: 500px;
+        border-collapse: collapse;
+        border: 1px solid #f8f8f8;
+        tr {
+          th {
+            width: 10%;
+            background-color: #eee;
+            font-weight: 400;
+            padding: 8px;
+            border: 1px solid #dedede;
+            font-size: 14px;
+            text-align: center;
+          }
+          td {
+            text-align: left;
+            word-wrap: normal;
+            width: 50%;
+            padding: 15px 15px;
+            border: 1px solid #dedede;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .btn-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 300px;
+    &__edit {
+      display: inline-block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 20px;
+      background: #ea352d;
+      border: 1px solid #ea352d;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }  
+    &__delete {
+      display: inline-block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 20px;
+      background: rgba(7, 95, 228, 0.973);
+      border: 1px solid rgba(7, 95, 228, 0.973);
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    &__home {
+      display: inline-block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      background: orange;
+      border: 1px solid orange;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }  
+  }
+}

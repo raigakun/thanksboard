@@ -6,7 +6,7 @@
           %span Thanks Board
       .subTitle
         %p 
-          %span ~ F r i d a y　O v a t i o n ~
+          %span ~ F r i d a y O v a t i o n ~
     .korona-main__header__centerContent
       .content-menu
         %ul
@@ -47,7 +47,7 @@
             皆さんの力が私たちの今日を支えています
     .message-text
       %i
-        私達Team70'sは「＃Friday　Ovation」活動を勝手ながら応援しています！！
+        私達Team70'sは「＃Friday Ovation」活動を勝手ながら応援しています！！
         %br
         この活動がもっと広まっていくことを願っています
         %br
@@ -105,24 +105,15 @@
     .korona-main__contents__topic
       .topic-text
         %h3 Topics
+        - if user_signed_in?
+          %label 
+            = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
       .topic-content
-        %p ここはタイトルが入ります。
-        %a 
-          ここはトピックの本文です。本文を入れてください。
-          %br
-          本文を入れてください。
-      .topic-content
-        %p ここはタイトルが入ります。
-        %a 
-          ここはトピックの本文です。本文を入れてください。
-          %br
-          本文を入れてください。
-      .topic-content
-        %p ここはタイトルが入ります。
-        %a 
-          ここはトピックの本文です。本文を入れてください。
-          %br
-          本文を入れてください。
+        - @topics.each do |topic|
+          %p
+            = link_to(topic_path(topic)) do
+              =topic.title
+      = paginate(@topics)
   #4
   .fotter
     .fotter-contents

@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   end
   
   resources :producers,  only: :index
+
+  resources :topics do
+  end
+
   resources :home,  only: :index
   
 end
