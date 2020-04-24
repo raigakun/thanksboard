@@ -187,48 +187,104 @@
         }
         .board-contents {
           padding-top: 120px;
-          .board-form {
+          .board-content {
+            padding-top: 70px;
             text-align: center;
-            .form-box {
-              #_text {
-                width: 650px;
-                height: 45px;
-                padding-left: 10px;
-                border-radius: 4px;
+            .b-toptext {
+              font-size: 30px;
+              display: flex;
+              text-align: center;
+              img {
+                height: 60px;
+                width: 60px;
+                margin-left: auto;
               }
-              .btn-box {
+              p {
+                margin-right: auto;
                 padding-top: 10px;
-                height: 50px;
-                .btn {
-                  width: 300px;
-                  height: 35px;
-                  background-color: orange;
-                  border-radius: 8px;
-                }
               }
             }
-          }
-          .board-content {
-            display: flex;
-            padding-top: 70px;
-            margin-left: 0;
-            text-align: center;
             .b-content {
-              width: 300px;
+              width: auto;
               .b-text {
-                font-size: 18px;
+                font-size: 25px;
                 padding-bottom: 15px;
-              }
-              .b-count {
-                display: flex;
-                i {
-                  font-size: 25px;
-                  color: orange;
-                  padding-right: 40px;
-                  padding-left: 30px;
+                padding-top: 70px;
+                font-weight: bold;
+                position:relative;
+                line-height: 5;
+                .bound span{
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  top:0;
+                  bottom: 0;
+                  margin: auto;
+                  font: size 30px;;
+                  font-weight:bold;
+                  color: black;
+                  text-align:center;
+                  // width:500px;
+                  // height:100px;
+                  animation: bound-anim 2.5s infinite;
                 }
-                p {
-                  font-size: 25px;
+                
+                @keyframes bound-anim {
+                  0%,100% {top: 0;transform: scale(1);}
+                  20% {top: -15%;}
+                  40% {transform: scale(1);}
+                  70% {top: 0;transform: scale(1.1,0.8);}
+                }
+              }
+
+              h6 {
+                padding-bottom: 30px;
+                font-size: 30px;
+                a {
+                  text-decoration: none;
+                  color: orange;
+                }
+                a:hover {
+                  background-color: black;
+                  border-radius: 20px;
+                  transition: background-color 0.3s, border-radius 0.3s;
+                }
+              }
+              .b-push {
+                // display: flex;
+                margin: auto;
+                border-bottom: solid 1px orange;
+                
+                img {
+                  text-decoration: none;
+                  width: 80px;
+                  height: 80px;
+                  border-radius: 50%;
+                }
+                
+                form {
+                  margin-left: auto;
+                  #like-buttons {
+                    border: none;
+                    background-color: white;
+                  }
+                }
+                form:hover {
+                  animation: hoverShake 0.2s linear 15;
+                  opacity: 0.8;
+                }
+                
+                @keyframes hoverShake {
+                  0% {transform: skew(0deg,0deg);}
+                  25% {transform: skew(1.5deg, 1.5deg);}
+                  75% {transform: skew(-1.5deg, -1.5deg);}
+                  100% {transform: skew(0deg,0deg);}
+                }
+                .b-count {
+                  font-size: 40px;
+                  color: orange;
+                  margin-right: auto;
+                  // padding: 20px 0 0 15px;
                 }
               }
             }
