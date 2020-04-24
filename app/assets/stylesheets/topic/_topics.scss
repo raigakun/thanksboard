@@ -3,7 +3,7 @@
   .topic-text {
     text-align: center;
     font-size: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     h3 {
       font-weight: bold;
       border-bottom: solid 3px orange;
@@ -33,24 +33,25 @@
       }
     }
     .btn-box {
+      margin-bottom: 100px;
       padding: 0 130px;
+      text-align: center;
       .btn {
-        text-align: center;
+        display: inline-block;
         width: 200px;
         height: 50px;
-        margin: 10px 0;
+        margin-right: 20px;
         background: #ea352d;
         border: 1px solid #ea352d;
         color: #fff;
       }  
-      &__return {
+      &__home {
         display: inline-block;
         width: 200px;
         height: 50px;
         line-height: 50px;
-        margin-top: 20px;
-        background: rgba(7, 95, 228, 0.973);
-        border: 1px solid rgba(7, 95, 228, 0.973);
+        background: blue;
+        border: 1px solid blue;
         color: #fff;
         a {
           text-decoration: none;
