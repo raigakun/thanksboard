@@ -33,7 +33,7 @@
         .front{:style => "background-image: url(https://unsplash.it/505/505/)"}
           .inner
             %p プログラミング初学者です。
-            %span{:style => "font-size:20px"}がんばりま〜す！
+            %span{:style => "font-size:20px"} がんばりましょう！
             %br
             %span{:style => "font-size:15px"} 世のため、人のためになるツールを開発するのが目標です。
             %br
@@ -42,11 +42,23 @@
             
         .back
           .inner
-            %span{:style => "font-size:15px"} 当サイトに関するお問い合わせ 
+            %span{:style => "font-size:25px"} - 当サイトに関するお問い合わせ - 
             %br 
             %span{:style => "font-size:15px"} 下記メールアドレスまで！
             %br
             %span{:style => "font-size:15px"} team70main@gmail.com
+            %br
+            %br 
+            %span{:style => "font-size:25px"} - その他 -　
+            %br
+            %span
+              = link_to "https://www.wantedly.com/users/130994435",{:style => "font-size:15px"} do
+                = "Wantedly"
+            %br
+            %span
+              = link_to "https://qiita.com/raigakun",{:style => "font-size:15px"} do
+                = "Qiita"
+
   .col-text
     %h2 Masakazu Minayoshi
   .cols
