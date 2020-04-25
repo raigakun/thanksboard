@@ -1,8 +1,14 @@
 .fotter
   .fotter-contents
-    .fotter-text
-      = link_to producers_path do
-        = "Producers & Contact"
+    .information-list
+      %ul
+        Information
+        %li
+          = link_to topics_path do
+            = "Topics"
+        %li
+          = link_to producers_path do
+            = "Producers & Contact"
     .f-home-page
       %ul 
         福岡県の情報について

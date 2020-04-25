@@ -41,6 +41,20 @@
     display: flex;
     justify-content: center;
     margin: 50px 0 100px;
+    &__new {
+      display: inline-block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 20px;
+      background: red;
+      border: 1px solid red;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
     &__home {
       display: inline-block;
       width: 200px;
@@ -101,6 +115,20 @@
       display: flex;
       justify-content: center;
       margin: 50px 0 100px;
+      &__new {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 20px;
+        background: greenyellow;
+        border: 1px solid greenyellow;
+        color: #fff;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
       &__home {
         display: inline-block;
         width: 200px;
