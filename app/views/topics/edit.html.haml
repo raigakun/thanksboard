@@ -17,6 +17,6 @@
           .btn-box__post
             = f.submit "変更", class: "btn"
           .btn-box__home
-            = link_to 'ホーム画面に戻る', root_path
+            -# = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
             
   =render partial: "footer"
