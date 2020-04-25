@@ -25,7 +25,8 @@
             font-size: 30px;
             color: orange;
             // text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
-            letter-spacing: -4px;
+            letter-spacing: -2px;
+            -webkit-text-stroke: 1px black;
           }
         }
         .subTitle {
@@ -54,7 +55,7 @@
           width: 100%;
           ul {
             padding: 10px 11px 0 11px;
-            font-size: 17px;
+            font-size: 22px;
             color: black;
             text-align: center;
             li {
@@ -93,7 +94,7 @@
           background-size: contain;
           width: auto;
           height: auto;
-          padding-top: 30px;
+          padding-top: 15px;
           .slick {
             background-size: contain;
             width: 100%;
@@ -311,10 +312,11 @@
           .b-message {
             text-align: center;
             padding-top: 20px;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             color: orange;
             font-family: 'M PLUS Rounded 1c', sans-serif;
+            padding-bottom: 50px;
           }
         }
       }

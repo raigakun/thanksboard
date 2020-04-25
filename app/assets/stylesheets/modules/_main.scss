@@ -310,6 +310,7 @@
             font-weight: bold;
             color: orange;
             font-family: 'M PLUS Rounded 1c', sans-serif;
+            padding-bottom: 60px;
           }
         }
       }
@@ -357,6 +358,12 @@
   .fotter {
     padding-top: 30px;
     background-color: orange;
+    .information-text {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Comic Neue', cursive;
+    }
     .fotter-contents {
       display: flex;
       justify-content: space-around;

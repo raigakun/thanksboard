@@ -116,10 +116,13 @@
     -#       = link_to "home#index", data: {"turbolinks" => false} 
   #3
   .fotter
+    .information-text
+      %p Information
     .fotter-contents
+      -# .information-text
+      -#   %p Information
       .information-list
         %ul
-          Information
           %li
             = link_to topics_path do
               = "Topics"
