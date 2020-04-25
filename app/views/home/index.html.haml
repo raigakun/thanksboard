@@ -24,6 +24,9 @@
           %li 
             %a.type-1{:href => "#4"}
               %span Producers & Contact
+          %li
+            = link_to "Topics",topics_path
+
   .korona-main__contents
     #index
     .korona-main__contents__images
@@ -104,21 +107,21 @@
     
 
 
-    #3
-    .korona-main__contents__topic
-      .topic-text
-        %h3 Topics
-        - if user_signed_in?
-          %label 
-            = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
-      .topic-content
-        - @topics.each do |topic|
-          %p
-            = link_to(topic_path(topic)) do
-              =topic.title
-      .topic-pagination
-        = paginate(@topics) do
-          = link_to "home#index", data: {"turbolinks" => false} 
+    -# #3
+    -# .korona-main__contents__topic
+    -#   .topic-text
+    -#     %h3 Topics
+    -#     - if user_signed_in?
+    -#       %label 
+    -#         = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
+    -#   .topic-content
+    -#     - @topics.each do |topic|
+    -#       %p
+    -#         = link_to(topic_path(topic)) do
+    -#           =topic.title
+    -#   .topic-pagination
+    -#     = paginate(@topics) do
+    -#       = link_to "home#index", data: {"turbolinks" => false} 
   #4
   .fotter
     .fotter-contents
