@@ -101,6 +101,9 @@
 
         .b-message
           %p I hope my heart will reach you ...
+    
+
+
     #3
     .korona-main__contents__topic
       .topic-text
@@ -113,7 +116,8 @@
           %p
             = link_to(topic_path(topic)) do
               =topic.title
-      = paginate(@topics)
+      .topic-pagination
+        = paginate(@topics)
   #4
   .fotter
     .fotter-contents
