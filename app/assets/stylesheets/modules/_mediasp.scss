@@ -15,7 +15,8 @@
           padding-top: 10px;
           text-align: center;
           h3 {
-            font-family: "Paytone One";
+            // font-family: "Paytone One";
+            font-family: 'Luckiest Guy', cursive;
             color: #202020;
             text-transform: uppercase;
             letter-spacing: -2px;
@@ -24,7 +25,7 @@
             display: block;
             font-size: 30px;
             color: orange;
-            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
+            // text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
             letter-spacing: -4px;
           }
         }
@@ -32,7 +33,8 @@
           padding-top: 10px;
           text-align: center;
           p {
-            font-family: "Paytone One";
+            // font-family: "Paytone One";
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             color: #202020;
             text-transform: uppercase;
             letter-spacing: -2px;
@@ -41,7 +43,7 @@
             display: block;
             font-size: 16px;
             color: black;
-            text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px gray;
+            // text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px gray;
             letter-spacing: -3px;
           }
         }
@@ -59,6 +61,7 @@
             li {
               display: inline;
               padding: 0 8.5px;
+              font-family: 'Comic Neue', cursive;
               font-weight: bold;
               border-bottom: solid 3px orange;
               transition: background-color 1s;
@@ -119,6 +122,7 @@
         text-align: center;
         padding-top: 130px;
         font-size: 10px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
       }
       //youtube
       &__videos {
@@ -126,6 +130,7 @@
         .videos-text {
           text-align: center;
           h5 {
+            font-family: 'Comic Neue', cursive;
             padding-top: 40px;
             font-size: 25px;
             font-weight: bold;
@@ -180,6 +185,7 @@
         .board-text {
           text-align: center;
           h2 {
+            font-family: 'Comic Neue', cursive;
             padding-top: 60px;
             font-size: 30px;
             font-weight: bold;
@@ -188,6 +194,10 @@
           p {
             padding-top: 30px;
             font-size: 20px;
+            font-family: 'Kosugi Maru', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Noto Serif JP', serif;
             br {
               padding-top: 20px;
             }
@@ -210,6 +220,7 @@
               p {
                 margin-right: auto;
                 padding-top: 10px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
               }
             }
             .b-content {
@@ -229,6 +240,7 @@
                   bottom: 0;
                   margin: auto;
                   font: size 30px;;
+                  font-family: 'M PLUS Rounded 1c', sans-serif;
                   font-weight:bold;
                   color: black;
                   text-align:center;
@@ -292,6 +304,7 @@
                   font-size: 30px;
                   color: orange;
                   margin-right: auto;
+                  font-family: 'M PLUS Rounded 1c', sans-serif;
                   // padding: 20px 0 0 15px;
                 }
               }
@@ -303,6 +316,7 @@
             font-size: 20px;
             font-weight: bold;
             color: orange;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
           }
         }
       }
@@ -313,6 +327,7 @@
           text-align: center;
           font-size: 25px;
           padding-bottom: 40px;
+          font-family: 'Comic Neue', cursive;
           h3 {
             font-weight: bold;
             border-bottom: solid 3px orange;
@@ -328,6 +343,7 @@
           p {
             padding: 20px 0;
             font-size: 16px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
           }
         }
         .topic-pagination {
