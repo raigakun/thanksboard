@@ -227,15 +227,15 @@ html, body {
 }
 @keyframes c {
 	0% {
-	transform: translateY(500px);
+	transform: translateY(800px);
 	}
 
 	70% {
-		transform: translateY(500px);
+		transform: translateY(800px);
 	}
 
 	100% {
-	transform: translateY(170px);
+	transform: translateY(250px);
 	}
 }
 
@@ -617,15 +617,15 @@ html, body {
   }
   @keyframes c {
     0% {
-    transform: translateY(600px);
+    transform: translateY(800px);
     }
   
     70% {
-      transform: translateY(600px);
+      transform: translateY(800px);
     }
   
     100% {
-    transform: translateY(250px);
+    transform: translateY(350px);
     }
   }
 }

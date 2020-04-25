@@ -148,7 +148,7 @@
       text-align: center;
       display: block;
       justify-content: center;
-      margin: 50px 0 300px;
+      margin: 50px 0 0px;
       &__edit {
         display: inline-block;
         width: 200px;
@@ -187,6 +187,7 @@
         background: orange;
         border: 1px solid orange;
         color: #fff;
+        margin-bottom: 10px;
         a {
           text-decoration: none;
           color: white;
