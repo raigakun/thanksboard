@@ -14,7 +14,7 @@ class TopicsController < ApplicationController
     if @topic.save
       redirect_to home_index_path
     else
-      redirect_to home_index_path
+      render :new
     end
   end
 
@@ -32,7 +32,7 @@ class TopicsController < ApplicationController
 
   def update
     if @topic.update(topic_update_params)
-      redirect_to home_index_path
+      redirect_to topic_path(@topic)
     else
       render :edit
     end
