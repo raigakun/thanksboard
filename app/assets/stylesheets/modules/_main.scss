@@ -28,7 +28,8 @@
             line-height: 80px;
             color: orange;
             // text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px wheat;
-            letter-spacing: -4px;
+            letter-spacing: -2px;
+            -webkit-text-stroke: 1px black;
           }
         }
         .subTitle {
