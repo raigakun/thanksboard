@@ -13,17 +13,15 @@
           %li 
             %a.type-1{:href => "#1"}
               %span Videos
-
           %li 
             %a.type-1{:href => "#2"}
               %span Thanks Messages
-
           %li 
             %a.type-1{:href => "#3"}
-              %span Topics
-          %li 
-            %a.type-1{:href => "#4"}
-              %span Producers & Contact
+              %span Information
+          -# %li 
+          -#   %a.type-1{:href => "#4"}
+          -#     %span Producers & Contact
   .korona-main__contents
     #index
     .korona-main__contents__images
@@ -101,30 +99,33 @@
 
         .b-message
           %p I hope my heart will reach you ...
-    
-
-
-    #3
-    .korona-main__contents__topic
-      .topic-text
-        %h3 Topics
-        - if user_signed_in?
-          %label 
-            = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
-      .topic-content
-        - @topics.each do |topic|
-          %p
-            = link_to(topic_path(topic)) do
-              =topic.title
-      .topic-pagination
-        = paginate(@topics) do
-          = link_to "home#index", data: {"turbolinks" => false} 
-  #4
+    -# #3
+    -# .korona-main__contents__topic
+    -#   .topic-text
+    -#     %h3 Topics
+    -#     - if user_signed_in?
+    -#       %label 
+    -#         = link_to "トピック投稿", new_topic_path, class: "btn btn-primary"
+    -#   .topic-content
+    -#     - @topics.each do |topic|
+    -#       %p
+    -#         = link_to(topic_path(topic)) do
+    -#           =topic.title
+    -#   .topic-pagination
+    -#     = paginate(@topics) do
+    -#       = link_to "home#index", data: {"turbolinks" => false} 
+  #3
   .fotter
     .fotter-contents
-      .fotter-text
-        = link_to producers_path do
-          = "Producers & Contact"
+      .information-list
+        %ul
+          Information
+          %li
+            = link_to topics_path do
+              = "Topics"
+          %li
+            = link_to producers_path do
+              = "Producers & Contact"
       .f-home-page
         %ul 
           福岡県の情報について

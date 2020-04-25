@@ -1,0 +1,17 @@
+.korona-main
+  =render partial: "header"
+  .korona-main__contents__topic
+    .topic-text
+      %h3 Topics一覧
+    .topic-content
+      - @topics.each do |topic|
+        %p
+          = link_to(topic_path(topic)) do
+            =topic.title
+    .topic-pagination
+      = paginate(@topics) 
+    .btn-box
+      .btn-box__home
+        = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
+  =render partial: "footer"
+
