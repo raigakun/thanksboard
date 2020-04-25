@@ -98,7 +98,7 @@
         .front{:style => "background-image: url(https://unsplash.it/504/504/"}
           .inner
             .Profiles1
-              %li Profiles
+              %li Profile
             .image3
               = image_tag 'nakaji.jpg'
             .text3
@@ -110,16 +110,61 @@
                 From FUKUOKA
         .back
           .inner
-            %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+            %p{:style => "font-size:25px"}
+              Self-introduction
+            %span{:style => "font-size:15px"}
+              学歴：県立高校卒業
+              %br
+              家族：妻、子供３人（12・10・2才）
+              %br
+              趣味：野球（player）・バス釣り
+              %br
+              好きな言葉：”一期一会”　”挑戦”
+              %br
+              %br
+              1月よりTECHCAMPでプログラミングを学習している初学者です。表現したい物を形にできるエンジニアになるのが目標です。
+
     .col{:ontouchstart => "this.classList.toggle('hover');"}
       .container
         .front{:style => "background-image: url(https://unsplash.it/505/505/)"}
           .inner
-            %p Reflupper
-            %span Lorem ipsum
+            %p
+              フロントエンド担当です。
+            %span{:style => "font-size:15px"}
+              まずは当サイトに足を運んでいただき
+              %br
+              ありがとうございます。
+              %br
+              私達Team70'sの共通テーマとして
+              %br
+              「感謝」と「私達に出来る事」です。
+              %br
+              そのテーマを具現化する事で少しでも
+              %br
+              思いを伝えられたらいいなと思います。
+              %br
+              I hope my heart will reach you ...
+
         .back
           .inner
-            %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+            %p{:style => "font-size:30px"}
+              Contact
+            %span{:style => "font-size:15px"}
+              ご連絡、お問い合わせは下記にお願いします。
+              %br
+              %br
+            %twitter
+              = link_to "https://twitter.com/@shota_nakaji/", class: "contents__btn contents__btn--twitter" do
+                = icon('fab', 'twitter', class: "contents__btn--icon")
+                %span<>
+                  Twitter
+                  %br
+                  %br
+            %p{:style => "font-size:25px"}
+              Portfolio site
+              %br
+            %p{:style => "font-size:16px"}
+              Coming soon
     .footer-btn
       .back-btn
         = link_to "home#index", data: {"turbolinks" => false} do
