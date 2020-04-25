@@ -13,20 +13,15 @@
           %li 
             %a.type-1{:href => "#1"}
               %span Videos
-
           %li 
             %a.type-1{:href => "#2"}
               %span Thanks Messages
-
           %li 
             %a.type-1{:href => "#3"}
-              %span Topics
-          %li 
-            %a.type-1{:href => "#4"}
-              %span Producers & Contact
-          %li
-            = link_to "Topics",topics_path
-
+              %span Information
+          -# %li 
+          -#   %a.type-1{:href => "#4"}
+          -#     %span Producers & Contact
   .korona-main__contents
     #index
     .korona-main__contents__images
@@ -104,9 +99,6 @@
 
         .b-message
           %p I hope my heart will reach you ...
-    
-
-
     -# #3
     -# .korona-main__contents__topic
     -#   .topic-text
@@ -122,12 +114,18 @@
     -#   .topic-pagination
     -#     = paginate(@topics) do
     -#       = link_to "home#index", data: {"turbolinks" => false} 
-  #4
+  #3
   .fotter
     .fotter-contents
-      .fotter-text
-        = link_to producers_path do
-          = "Producers & Contact"
+      .information-list
+        %ul
+          Information
+          %li
+            = link_to topics_path do
+              = "Topics"
+          %li
+            = link_to producers_path do
+              = "Producers & Contact"
       .f-home-page
         %ul 
           福岡県の情報について
