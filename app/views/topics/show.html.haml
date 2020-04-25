@@ -19,10 +19,10 @@
         .btn-box__delete
           = link_to '投稿の削除', topic_path(@topic),method: :delete, data: { confirm: "本当に削除しますか？" }
         .btn-box__home
-          = link_to 'ホーム画面に戻る', root_path
+          -# = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
     - else
       .btn-box
         .btn-box__home
-          = link_to 'ホーム画面に戻る', root_path  
-    
+          -# = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
+       
     =render partial: "footer"

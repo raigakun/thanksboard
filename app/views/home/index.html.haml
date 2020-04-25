@@ -116,8 +116,9 @@
           %p
             = link_to(topic_path(topic)) do
               =topic.title
-      .topic-pagination
-        = paginate(@topics)
+
+      = paginate(@topics) 
+        -# = link_to "home#index", data: {"turbolinks" => false} 
   #4
   .fotter
     .fotter-contents
