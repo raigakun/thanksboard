@@ -12,9 +12,9 @@ class TopicsController < ApplicationController
   def create
     @topic = Topic.new(topic_params)
     if @topic.save
-      # redirect_to home_index_path
+      redirect_to home_index_path
     else
-      # redirect_to home_index_path
+      redirect_to home_index_path
     end
   end
 
@@ -23,7 +23,7 @@ class TopicsController < ApplicationController
 
   def destroy
     if @topic.destroy
-      # redirect_to home_index_path
+      redirect_to home_index_path
     end
   end
 
@@ -32,7 +32,7 @@ class TopicsController < ApplicationController
 
   def update
     if @topic.update(topic_update_params)
-      # redirect_to home_index_path
+      redirect_to home_index_path
     else
       render :edit
     end
