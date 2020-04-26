@@ -70,3 +70,7 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'redcarpet'
 gem 'rails-i18n'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
