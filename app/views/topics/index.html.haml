@@ -10,8 +10,14 @@
             =topic.title
     .topic-pagination
       = paginate(@topics) 
-    .btn-box
-      .btn-box__home
-        = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
-  =render partial: "footer"
-
+    - if user_signed_in?
+      .btn-box
+        .btn-box__new
+          = link_to '新規投稿', new_topic_path
+        .btn-box__home
+          = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
+    - else
+      .btn-box
+        .btn-box__home
+          = link_to 'ホーム画面に戻る', home_index_path, data: {"turbolinks" => false} 
+  =render partial: "footer" 
